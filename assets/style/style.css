@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+:root{
+  --background-dark: rgb(24,23,32);
+  --font-text: rgb(255, 255, 255);
+  --box-width: 360px;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+body {
+  background-color: var(--background-dark);
+  font-family: "Open Sans", sans-serif,'Arial','Helvetica';
+}
+
+h2, p {
+  color: var(--font-text);
+  font-size: 20px;
+}
+
+
+/*------------------------------------------*/
+/*              Header                      */
+/*------------------------------------------*/
+
+header {
+  background-color: #654ede;
+  color: #ffffff;
+  height: 60px;
+  display: flex;
+}
+
+h1 {
+  text-align: left;
+  line-height: 60px;
+  font-size: 32px;
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+nav ul li a {
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: default;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #0f00ab;
+}
+
+.header-nav {
+  display: flex;
+  gap:30px;
+}
+
+
+
+/*------------------------------------------*/
+/*              Display                     */
+/*------------------------------------------*/
+
+.info {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+  padding: 8px 0;
+}
+
+.info h2 {
+  line-height: 24px;
+}
+
+.box {
+  width:var(--box-width);
+  border: solid 1px #35323a;
+  border-radius: 5px;
+  margin: 15px 0;
+  justify-content: center;
+  box-shadow: 1px 1px;
+}
+
+.box-title {
+  background-color: #35323a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.box-title h2{
+  line-height: 30px;
+}
+
+.box-online {
+  height: 60px;
+  line-height: 60px;
+  width: var(--box-width);
+  background-color: #ee1e1e;
+  border: 1px solid #ee1e1e;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 1px 1px;
+  margin-bottom: 15px;
+}
+
+/*------------------------------------------*/
+/*              Utility                     */
+/*------------------------------------------*/
+
+
+.space-around{
+  justify-content: space-around;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+}
+
+.center{
+  align-content: center;
+}
+
